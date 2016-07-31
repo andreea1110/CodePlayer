@@ -1,0 +1,40 @@
+<! doctype html>
+<html>
+	<head>
+		<title>CodePlayer</title>
+		<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+		<link rel="stylesheet" href="jquery-ui-1.12.0/jquery-ui.min.css">
+		<script src="jquery-ui-1.12.0/jquery-ui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="codeplayer.css">
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		
+		
+	</head>
+		
+	<body>
+			
+		<div id="top_bar">
+			<div id="logo">Deea's CodePlayer</div>
+			
+			<div id="menu_div">
+				<div class="toggle_button active noselect" id="html">HTML</div>
+				<div class="toggle_button noselect" id="css">CSS</div>
+				<div class="toggle_button noselect" id="javascript">JavaScript</div>
+				<div class="toggle_button active noselect" id="output">Output</div>
+			</div>
+		</div>
+		
+		<div id="container">
+			<textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+			<textarea id="cssPanel" class="panel hidden">p { color:blue; }</textarea>
+			<textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Moin!";</textarea>
+			<iframe id="outputPanel" class="panel"></iframe>
+		</div>
+		
+		<script type="text/javascript" src="codeplayer.js"></script>
+		
+	</body>
+
+		
+	
+</html>

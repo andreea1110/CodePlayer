@@ -1,0 +1,98 @@
+body { 
+	margin:0px; 
+	padding:0px; 
+	font-family: sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+#top_bar {
+	background-color:#D4E6F1;
+	height:40px;
+	width:100%;
+	float:left;
+}
+
+#logo {
+	font-family: 'Poiret One', cursive;
+	font-size:25px;
+	padding:5px 0 5px 12px;
+	float:left;
+	font-weight:bold;
+}
+
+
+@media (min-width: 650px) {
+	/* center the buttons for window widths of at least 650px*/
+	#menu_div {
+		width:235px;
+		margin: 5px auto;
+	}
+}
+
+@media (max-width: 649px) {
+	/* float right the buttons for small window widths*/
+	#menu_div {
+		width:235px;
+		margin: 5px 0;
+		float:right;
+	}
+}
+
+.toggle_button {
+	float:left;
+	border: 1px solid grey;
+	padding: 6px;
+	border-right: none;
+	font-size: 90%;
+	cursor:default;
+}
+
+#html {
+	
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+}
+
+#output {
+	border-top-right-radius:4px;
+	border-bottom-right-radius:4px;
+	border-right: 1px solid grey;!
+}
+
+.active {
+	background-color:#F9E79F;
+}
+
+.highlighted_button {
+	background-color:#AEB6BF;
+}
+
+textarea {
+	resize:none;
+	border-top:none;
+	border-color:gray;
+	padding:5px;
+}
+
+.panel {
+	float:left;
+	border-left:none;
+}
+
+iframe {
+	border:none;
+	margin-left:5px;
+}
+
+.hidden {
+	display:none;
+}
